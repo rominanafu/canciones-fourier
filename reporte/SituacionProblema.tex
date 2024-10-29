@@ -57,7 +57,7 @@ la interferencia de ondas crea patrones complejo, y puede ser muy difícil de an
   \label{parametros-ondas}
 \end{figure}
 \subsubsection{Frecuencias de audio/sonido}
-Como se definió anteriormente, la frecuencia de una onda es, de acuerdo a [1], como el número de repeticiones 
+Como se definió anteriormente, la frecuencia de una onda es, de acuerdo a \cite{university-physics}, como el número de repeticiones 
     de una función periódica durante una unidad de variación en la variable independiente. En otras palabras, es el número de 
     ocurrencias de un evento repetitivo por unidad de tiempo. Matemáticamente, se dice que en medios no dispersivos (medios donde 
     la velocidad de la onda es independiente de la frecuencia), la frecuencia tiene una relación inversa con la longitud 
@@ -65,10 +65,44 @@ Como se definió anteriormente, la frecuencia de una onda es, de acuerdo a [1], 
     \begin{align}
     f = \frac{v}{\lambda}
     \label{frequency-eq}
-    \end{align}Además, la frecuencia se mide en Hz o Hertz, equivalente a un evento de repetición por segundo. 
-\subsubsection{Sonidos armónicos}
-\subsubsection{Beats}
+    \end{align}Analizando la ecuación \ref{frequency-eq}, observamos que ondas de longitud más corta ($\lambda$), 
+    tienen mayores variaciones en la frecuencia debido a que los máximos y mínimos están más cerca uno del otro, y viceversa. Una vista gráfica 
+    se observa en la Figura \ref{frecuencias-onda}. 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height = 6cm]{frecuencias-ondas.jpg}
+      \caption{Diferentes frecuencias de onda}
+      \label{frecuencias-onda}
+    \end{figure}
+    Además, la frecuencia se mide en Hz o Hertz, equivalente a un evento de repetición por segundo. De acuerdo a \cite{university-physics}, 
+    la frecuencia de una onda de sonido es el factor primario al determinar el tono de un sonido. Frecuencias 
+    más altas emiten sonidos con mayor tono que frecuencias más bajas. En conjunto, cuando se juntan diferentes frecuencias 
+    al mismo tiempo, se crean patrones más complejos que ondas simples sinusoidales, debido a que físicamente, las variaciones en presión 
+    del medio que se generan son más complejas. 
+\subsubsection{Sonidos armónicos}De acuerdo a \cite{university-physics}, puede suceder que dos tonos producidos por diferentes instrumentos tengan la 
+misma frecuencia pero suenen diferente, y ésto es debido a la diferencia en contenido armónico, que está definido como la colección de diferentes frecuencias 
+que componen un sonido complejo formado por muchas frecuencias fundamentales. Además, de acuerdo a \cite{university-physics}, otro factor que determina los 
+sonidos armónicos de un sonido es el comportamiento al inicio (attack) y al final (decay) de cada tono. Cada instrumento posee una diferente dinámica de sonidos armónicos, 
+lo cuál entrega ondas en una mezcla diferente de frecuencias, que da su sonido característico. \\
 
+Para dar algunos ejemplos \cite{orchestra-frecuency}, la nota de afinación en una orquesta sinfónica es A4, que tiene una frecuencia de 440Hz. Frecuencias más complejas se generan cuando 
+se utiliza el concepto de octavas en música, que de acuerdo a \cite{octave-definition}, es una serie de 8 notas musicales que ocupan el intervalo entre 2 notas, una teniendo el doble 
+o la mitad de la frecuencia que la otra. Es decir, un salto de una octava corresponde a duplicar la frecuencia de la onda de sonido. 
+\subsubsection{Beats}
+En la física, sucede que cuando se tienen dos ondas con igual amplitud pero ligeramente diferentes frecuencias, si ambas ondas van hacia la 
+misma dirección, pasa que en ciertos momentos, las dos ondas están en la misma fase, es decir, sus máximos coinciden y sus amplitudes se suman. Sin embargo, 
+debido a que las ondas están en ligeramente distintas frecuencias, llega a haber momentos en los que estas ondas están 
+exactamente fuera de fase, y se cancelan una con otra. La variación de amplitud causa variaciones en el volumen, llamadas \textit{beats}, y la frecuencia 
+con la que éstos varían se le llama frecuencia de beat. En la Figura \ref{beats-grafica} se muestra éste proceso de manera gráfica.
+\begin{figure}[H]
+  \centering
+  \includegraphics[height = 7cm]{beats-grafica.png}
+  \caption{Gráfica del proceso de beats}
+  \label{beats-grafica}
+\end{figure}Los beats entre dos tonos, de acuerdo a \cite{university-physics}, pueden ser escuchados hasta una frecuencia de beat de 6 o 7Hz. En la práctica, 
+una técnica importante es escuchar los beats para afinar los instrumentos musicales. Además, de acuerdo a \cite{university-physics}, cuando las diferencias de 
+frecuencia son mayores a 7Hz, se dejan de escuchar beats individuales, y las frecuencias se mezclan en una de consonancia o disonancia, dependiendo de la 
+naturaleza de las frecuencias. 
 \subsection{Análisis de las canciones}
 
 Para la clasificación de las canciones entre los géneros de música instrumental o reggaetón,
@@ -136,6 +170,12 @@ la figura \ref{fig:fourier}.
   \bibitem{frequencies-wave-sound-pso}
   Al Hwaitat et Al, Journal of Experimental \&\ Theoretical Artificial Intelligence,
   2022, 34, 749-780
+  \bibitem{orchestra-frecuency}
+  N. Lenssen, \emph{PhD Thesis: Applications of Fourier Analysis to Audio Signal Processing: An Investigation of Chord Detection Algorithms
+  }, Claremont University, 2013.
+
+  \bibitem{octave-definition}
+  Britannica, https://www.britannica.com/art/octave-music, (accesado 28 Octubre 2024)
   \bibitem{Montenegro-2009}
   A. Montenegro, \textit{CORE}, 2009, \url{https://core.ac.uk/download/pdf/6448967.pdf}
   \bibitem{Bernal-1999}
