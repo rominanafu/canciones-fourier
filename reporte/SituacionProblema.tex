@@ -147,15 +147,92 @@ la figura \ref{fig:fourier}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{FourierSeries_Freq.png}
-  \caption{Representación visual de la transformada de Fourier \cite{OGorman-2023}.}
+  \caption{Representación visual de la transformada de Fourier \cite{OGorman-2023}}
   \label{fig:fourier}
 \end{figure}
 
 \subsubsection{Espectrogramas}
 
+La transformada de Fourier nos provee con las frecuencias de la canción,
+pero la forma en la que estas pueden ser analizadas puede ser muy variada.
+Una de las formas que existen para analizar estas frecuencias es a través de los
+espectrogramas, los cuales son una representación visual de la cual se pueden
+sacar distintas conclusiones del sonido que se tiene. Tratar la representación
+visual de frecuencias como una imagen con textura permite reconocer la suavidad,
+la regularidad, el contraste, entre otros \cite{Costa-2011}.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{espectrogramas_01.png}
+  \caption{Espectrograma de sonidos armónicos estables \cite{Colomer-01}}
+  \label{fig:e1}
+\end{figure}
 
-\subsubsection{Rangos de frecuencias}
+\noindent La figura \ref{fig:e1} representa un espectrograma con
+los componentes de la serie armónica. Se observan líneas bien definidas,
+lo cual se asemejaría a lo que se busca en una canción instrumental.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{espectrogramas_02.png}
+  \caption{Espectrograma de tres sonidos armónicos formados por
+  componentes cuya amplitud evoluciona de diferentes formas \cite{Colomer-02}}
+  \label{fig:e2}
+\end{figure}
+
+\noindent En la figura \ref{fig:e2} se tienen también sonidos armónicos,
+solo que sus amplitudes cambian. A pesar de ello, se observan aún líneas
+bien definidas, que también se podría esperar de las canciones instrumentales.
+
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{espectrogramas_03.png}
+%   \caption{Espectrograma de varios sonidos cuya frecuencia
+%   evoluciona de diferentes formas \cite{Colomer-03}}
+%   \label{fig:e3}
+% \end{figure}
+
+% \noindent 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{espectrogramas_04.png}
+  \caption{Espectrograma de ruido blanco y sonido simple \cite{Colomer-04}}
+  \label{fig:e4}
+\end{figure}
+
+\noindent En la figura \ref{fig:e4} se tiene ahora una comparación entre
+el ruido blanco, el cual contiene a todas las frecuencias, y el sonido simple.
+Se puede notar que cuando existe una gran combinación de frecuencias, el espectrograma
+se encuentra muy saturado, mientras que cuando tenemos sonidos más puros, en el
+espectrograma se tiene una línea definida.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{espectrogramas_05.png}
+  \caption{Espectrograma de ruido de tráfico y de habla \cite{Colomer-05}}
+  \label{fig:e5}
+\end{figure}
+
+\noindent En la figura \ref{fig:e5}, se tiene un espectograma que representa al
+ruido del tráfico en la primera parte, y a una voz de un programa de radio en la segunda
+mitad. Así como el ruido blanco, al tener una gran combinación de sonidos, la
+parte del espectrograma con el ruido de tráfico está saturado en frecuencias bajas,
+y en la parte derecha, hay varias líneas fragmentadas y que siguen distintas frecuencias.
+Aquí ya no se llegan a ver líneas tan bien definidas como en las figuras
+\ref{fig:e1} y \ref{fig:e2}, mas que a la mitad, con el
+sonido de un claxon de auto, que se podría decir que es un sonido más definido
+que el tráfico o la voz. \medskip
+
+\noindent Utilizando estos ejemplos, se puede tener una intuición de qué esperar
+en el espectrograma de cada género musical. Por un lado, con la música instrumental,
+al no tener voces, y tener sonidos mezclados entre beats y los armónicos producidos
+por los mismos instrumentos. Como no existe una gran mezcla de sonidos, el espectrograma
+tendería a verse con líneas horizontales mejor definidas, como en las figuras
+\ref{fig:e1} y \ref{fig:e2}. Por otro lado, en el género musical del reggaetón, se tiene
+una gran combinación de sonidos, como el beat y los armónicos, además de tener una voz
+que se podría asemejar a la segunda parte de la figura \ref{fig:e5}. Entonces el reggaetón
+tendría una mayor combinación de ruidos, y su espectrograma tendría mucha textura.
 
 \section{Resultados}
 
@@ -182,5 +259,23 @@ la figura \ref{fig:fourier}.
   J. Bernal, P. Gómez y J. Bobadilla, \textit{Estudios de fonética experimental}, 1999, \textbf{10}, 75-105.
   \bibitem{OGorman-2023}
   L. O'Gorman, \textit{DIBS Methods Meetings}, 2023, \url{https://dibsmethodsmeetings.github.io/fourier-transforms/}
+  \bibitem{Costa-2011}
+  Y. M. G. Costa, L. S. Oliveira, A. L. Koerich y F. Gouyon, \textit{IEEE}, 2011,
+  \textbf{18}, 1-4
+  \bibitem{Colomer-01}
+  Luis Colomer Blasco, Capítulo 10. Figura 10. Espectrograma serie armónica,
+  \url{https://www.youtube.com/watch?v=RzitKHMUoeg}, (accesado Octubre 28, 2024)
+  \bibitem{Colomer-02}
+  Luis Colomer Blasco, Capítulo 10. Figura 11. Espectrograma de envolventes de amplitud,
+  \url{https://www.youtube.com/watch?v=idEvt5HuQTc}, (accesado Octubre 28, 2024)
+  % \bibitem{Colomer-03}
+  % Luis Colomer Blasco, Capítulo 10. Figura 12. Espectrograma de envolventes de frecuencia,
+  % \url{https://www.youtube.com/watch?v=RV2Ev9zhe5E}, (accesado Octubre 28, 2024)
+  \bibitem{Colomer-04}
+  Luis Colomer Blasco, Capítulo 10. Figura 13. Espectrograma de ruido blanco y sonido simple,
+  \url{https://www.youtube.com/watch?v=ZoffBnGMctI}, (accesado Octubre 28, 2024)
+  \bibitem{Colomer-05}
+  Luis Colomer Blasco, Capítulo 10. Figura 14. Espectrograma de tráfico con lluvia y locutora de radio,
+  \url{https://www.youtube.com/watch?v=XUvLZQctg7I}, (accesado Octubre 28, 2024)
 \end{thebibliography}
 \end{document}
