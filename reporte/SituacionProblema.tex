@@ -21,9 +21,67 @@
 Juan Pablo Guerrero Escudero & Romina Nájera Fuentes & Juan Braulio Olivares Rodríguez
 \end{tabular}
 
-\section*{Introducción}
+\section{Introducción}
 
-\section*{Teoría}
+\section{Teoría}
+
+\subsection{Conceptos físicos}
+
+\subsection{Análisis de las canciones}
+
+Para la clasificación de las canciones entre los géneros de música instrumental o reggaetón,
+realizaremos un análisis espectral, el cual busca descomponer una serie de tiempo en las
+ondas senoidales que la conforman \cite{Montenegro-2009}. Este análisis permitirá obtener las
+diferentes frecuencias que conforman al pedazo de canción a analizar, y poder sacar conclusiones
+sobre el género de la canción. \medskip
+
+\noindent Para ello, utilizaremos la transformada de Fourier, utilizada
+comúnmente en el campo científico, como en la acústica y el procesamiento de señales.
+Esta herramienta transforma el dominio de una señal, pasando del tiempo a la frecuencia,
+sin alterar su contenido \cite{Bernal-1999}.
+Al perderse la noción del tiempo, analizaremos los rangos de frecuencias en los
+que se encuentran magnitudes más grandes, para así identificar si la canción presentada
+es instrumental o reggaetón.
+
+\subsubsection{Transformada de Fourier}
+
+Por definición, la transformada de Fourier de una función $f(x)$ es dada por la ecuación \ref{eq:fourier}
+\begin{align}
+	\phi_f(\alpha) &= \int_{-\infty}^{\infty} e^{i\alpha x} f(x) dx
+	\label{eq:fourier}
+\end{align}
+
+\noindent Esta transformada fue desarrollada por Jean-Baptiste Joseph Fourier en el siglo XIX,
+quien inició proponiendo que cualquier función arbitraria de una variable
+podía ser expresada como una combinación lineal de funciones de senos y cosenos,
+que son las series de Fourier \cite{OGorman-2023}. \medskip
+
+\noindent A través de esas series, logró sintetizar la transformada, la cual
+es distinguida por:
+\begin{itemize}
+  \item Determinar qué frecuencias están presentes en una señal.
+  \item Transformar una señal del dominio temporal al dominio de frecuencia y viceversa.
+\end{itemize}
+
+\noindent Así como las series de Fourier descomponen una función en senos y cosenos, la
+transformada descompone una señal en sus frecuencias, y aquellas que tengan una mayor
+amplitud, se verán representadas como picos más altos, así como se puede observar en
+la figura \ref{fig:fourier}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{FourierSeries_Freq.png}
+  \caption{Representación visual de la transformada de Fourier \cite{OGorman-2023}.}
+  \label{fig:fourier}
+\end{figure}
+
+\subsubsection{Espectrogramas}
+
+
+
+\subsubsection{Rangos de frecuencias}
+
+
 
 Conceptos de física relevantes:
 \begin{enumerate}
@@ -40,17 +98,22 @@ Conceptos de física relevantes:
     \item Identificación de reggaeton/instrumental
 \end{enumerate}
 
+\section{Resultados}
+
+\section{Conclusiones}
 
 
-\section*{Resultados}
 
-\section*{Conclusiones}
-
-\section*{Referencias}
 \begin{thebibliography}{9}
   \bibitem{university-physics}
   H. D. Young and Roger A. Freedman, \emph{University Physics with Modern Physics}, 
 Addison-Wesley, San Francisco, 2012. %%Para citar \cite{university-physics}
+  \bibitem{Montenegro-2009}
+  A. Montenegro, \textit{CORE}, 2009, \url{https://core.ac.uk/download/pdf/6448967.pdf}
+  \bibitem{Bernal-1999}
+  J. Bernal, P. Gómez y J. Bobadilla, \textit{Estudios de fonética experimental}, 1999, \textbf{10}, 75-105.
+  \bibitem{OGorman-2023}
+  L. O'Gorman, \textit{DIBS Methods Meetings}, 2023, \url{https://dibsmethodsmeetings.github.io/fourier-transforms/}
   
   \end{thebibliography}
 \end{document}
