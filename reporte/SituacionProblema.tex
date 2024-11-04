@@ -12,6 +12,7 @@
 \title{%
   Situación Problema: Análisis de Audio usando Fourier \\
   \large F1009: Análisis de métodos matemáticos para la física}
+\author{}
 
 \begin{document}
 
@@ -246,69 +247,721 @@ que se podría asemejar a la segunda parte de la figura \ref{fig:e5}. Entonces e
 tendría una mayor combinación de ruidos, y su espectrograma tendría mucha textura.
 
 \section{Resultados}
-\textbf{Canción 1}
+
+\textbf{\large{Canción 1}}
+
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{fourier_01.pdf}
-  \caption{Transformada de Fourier de Canción 1}
-  \label{Transformada de Fourier Canción 1}
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion1/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 1}
+  \label{fig:01a}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{espec_01.pdf}
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/subbass.png}
+    \captionof{figure}{Sub bass de canción 1}
+    \label{fig:01b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/bass.png}
+    \captionof{figure}{Bass de canción 1}
+    \label{fig:01c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 1}
+    \label{fig:01d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/mid.png}
+    \captionof{figure}{Midrange de canción 1}
+    \label{fig:01e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/upmid.png}
+    \captionof{figure}{Upper midrange de canción 1}
+    \label{fig:01f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion1/presence.png}
+    \captionof{figure}{Presence de canción 1}
+    \label{fig:01g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion1/brilliance.png}
+  \caption{Brilliance de canción 1}
+  \label{fig:01h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion1/espectrograma.png}
   \caption{Espectrograma de canción 1}
-  \label{Espectograma-cancion-1}
+  \label{fig:01i}
 \end{figure}
-\textit{Clasificación:}
-Instrumental
 
-\textit{Justificación:} En el espectograma, observamos que muestra líneas horizontales bien 
-definidas, a comparación de las notas armónicas en los espectogramas de los ejemplos. 
-Ésto nos indica que al existir líneas horizontales, se asemeja más al 
-espectograma de la Figura \ref{fig:e2}, que presenta sonidos armónicos, por lo que éste 
-espectograma se asemeja más con la música instrumental que al reggaetón. 
-
-\textbf{Canción 2}
+\textbf{\large{Canción 2}}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{fourier_02.png}
-  \caption{Transformada de Fourier de canción 2}
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion2/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 2}
+  \label{fig:02a}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{espec_02.png}
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/subbass.png}
+    \captionof{figure}{Sub bass de canción 2}
+    \label{fig:02b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/bass.png}
+    \captionof{figure}{Bass de canción 2}
+    \label{fig:02c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 2}
+    \label{fig:02d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/mid.png}
+    \captionof{figure}{Midrange de canción 2}
+    \label{fig:02e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/upmid.png}
+    \captionof{figure}{Upper midrange de canción 2}
+    \label{fig:02f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion2/presence.png}
+    \captionof{figure}{Presence de canción 2}
+    \label{fig:02g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion2/brilliance.png}
+  \caption{Brilliance de canción 2}
+  \label{fig:02h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion2/espectrograma.png}
   \caption{Espectrograma de canción 2}
+  \label{fig:02i}
 \end{figure}
-\textit{Clasificación:}
-Reggaetón
 
-\textit{Justificación:}
-El espectrograma no muestra líneas horizontales bien definidas, como
-sucedía en las notas armónicas de los espectrogramas de los ejemplos.
-Asimismo, se observan muchas líneas quebradas y "paralelas" entre sí,
-que se asemeja a la voz en la figura \ref{fig:e5}. Este espectrograma encaja más
-con la música del reggaetón que con la instrumental. 
-
-\textbf{Canción 3}
+\textbf{\large{Canción 3}}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{fourier_03.png}
-  \caption{Transformada de Fourier de canción 3}
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion3/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 3}
+  \label{fig:03a}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{espec_03.png}
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/subbass.png}
+    \captionof{figure}{Sub bass de canción 3}
+    \label{fig:03b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/bass.png}
+    \captionof{figure}{Bass de canción 3}
+    \label{fig:03c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 3}
+    \label{fig:03d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/mid.png}
+    \captionof{figure}{Midrange de canción 3}
+    \label{fig:03e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/upmid.png}
+    \captionof{figure}{Upper midrange de canción 3}
+    \label{fig:03f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion3/presence.png}
+    \captionof{figure}{Presence de canción 3}
+    \label{fig:03g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion3/brilliance.png}
+  \caption{Brilliance de canción 3}
+  \label{fig:03h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion3/espectrograma.png}
   \caption{Espectrograma de canción 3}
+  \label{fig:03i}
 \end{figure}
-\textit{Clasificación:}
-Instrumental
 
-\textit{Justificación:}
-Similar a la canción 1, en el espectrograma de esta canción,
-se muestra un patrón con varias líneas horizontales, lo cual nos
-hace pensar que el género de la canción es instrumental.
-Asimismo, no parece haber líneas similares a las producidas por
-una voz, lo cual nos confirma que esta canción es instrumental y no reggaetón.
+\textbf{\large{Canción 4}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion4/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 4}
+  \label{fig:04a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/subbass.png}
+    \captionof{figure}{Sub bass de canción 4}
+    \label{fig:04b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/bass.png}
+    \captionof{figure}{Bass de canción 4}
+    \label{fig:04c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 4}
+    \label{fig:04d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/mid.png}
+    \captionof{figure}{Midrange de canción 4}
+    \label{fig:04e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/upmid.png}
+    \captionof{figure}{Upper midrange de canción 4}
+    \label{fig:04f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion4/presence.png}
+    \captionof{figure}{Presence de canción 4}
+    \label{fig:04g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion4/brilliance.png}
+  \caption{Brilliance de canción 4}
+  \label{fig:04h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion4/espectrograma.png}
+  \caption{Espectrograma de canción 4}
+  \label{fig:04i}
+\end{figure}
+
+\textbf{\large{Canción 5}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion5/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 5}
+  \label{fig:05a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/subbass.png}
+    \captionof{figure}{Sub bass de canción 5}
+    \label{fig:05b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/bass.png}
+    \captionof{figure}{Bass de canción 5}
+    \label{fig:05c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 5}
+    \label{fig:05d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/mid.png}
+    \captionof{figure}{Midrange de canción 5}
+    \label{fig:05e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/upmid.png}
+    \captionof{figure}{Upper midrange de canción 5}
+    \label{fig:05f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion5/presence.png}
+    \captionof{figure}{Presence de canción 5}
+    \label{fig:05g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion5/brilliance.png}
+  \caption{Brilliance de canción 5}
+  \label{fig:05h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion5/espectrograma.png}
+  \caption{Espectrograma de canción 5}
+  \label{fig:05i}
+\end{figure}
+
+\textbf{\large{Canción 6}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion6/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 6}
+  \label{fig:06a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/subbass.png}
+    \captionof{figure}{Sub bass de canción 6}
+    \label{fig:06b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/bass.png}
+    \captionof{figure}{Bass de canción 6}
+    \label{fig:06c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 6}
+    \label{fig:06d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/mid.png}
+    \captionof{figure}{Midrange de canción 6}
+    \label{fig:06e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/upmid.png}
+    \captionof{figure}{Upper midrange de canción 6}
+    \label{fig:06f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion6/presence.png}
+    \captionof{figure}{Presence de canción 6}
+    \label{fig:06g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion6/brilliance.png}
+  \caption{Brilliance de canción 6}
+  \label{fig:06h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion6/espectrograma.png}
+  \caption{Espectrograma de canción 6}
+  \label{fig:06i}
+\end{figure}
+
+\textbf{\large{Canción 7}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion7/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 7}
+  \label{fig:07a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/subbass.png}
+    \captionof{figure}{Sub bass de canción 7}
+    \label{fig:07b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/bass.png}
+    \captionof{figure}{Bass de canción 7}
+    \label{fig:07c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 7}
+    \label{fig:07d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/mid.png}
+    \captionof{figure}{Midrange de canción 7}
+    \label{fig:07e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/upmid.png}
+    \captionof{figure}{Upper midrange de canción 7}
+    \label{fig:07f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion7/presence.png}
+    \captionof{figure}{Presence de canción 7}
+    \label{fig:07g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion7/brilliance.png}
+  \caption{Brilliance de canción 7}
+  \label{fig:07h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion7/espectrograma.png}
+  \caption{Espectrograma de canción 7}
+  \label{fig:07i}
+\end{figure}
+
+\textbf{\large{Canción 8}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion8/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 8}
+  \label{fig:08a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/subbass.png}
+    \captionof{figure}{Sub bass de canción 8}
+    \label{fig:08b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/bass.png}
+    \captionof{figure}{Bass de canción 8}
+    \label{fig:08c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 8}
+    \label{fig:08d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/mid.png}
+    \captionof{figure}{Midrange de canción 8}
+    \label{fig:08e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/upmid.png}
+    \captionof{figure}{Upper midrange de canción 8}
+    \label{fig:08f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion8/presence.png}
+    \captionof{figure}{Presence de canción 8}
+    \label{fig:08g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion8/brilliance.png}
+  \caption{Brilliance de canción 8}
+  \label{fig:08h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion8/espectrograma.png}
+  \caption{Espectrograma de canción 8}
+  \label{fig:08i}
+\end{figure}
+
+\textbf{\large{Canción 9}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion9/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 9}
+  \label{fig:09a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/subbass.png}
+    \captionof{figure}{Sub bass de canción 9}
+    \label{fig:09b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/bass.png}
+    \captionof{figure}{Bass de canción 9}
+    \label{fig:09c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 9}
+    \label{fig:09d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/mid.png}
+    \captionof{figure}{Midrange de canción 9}
+    \label{fig:09e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/upmid.png}
+    \captionof{figure}{Upper midrange de canción 9}
+    \label{fig:09f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion9/presence.png}
+    \captionof{figure}{Presence de canción 9}
+    \label{fig:09g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion9/brilliance.png}
+  \caption{Brilliance de canción 9}
+  \label{fig:09h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion9/espectrograma.png}
+  \caption{Espectrograma de canción 9}
+  \label{fig:09i}
+\end{figure}
+
+\textbf{\large{Canción 10}}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{imgs/Cancion10/transformada.png}
+  \caption{Logaritmo de la transformada de Fourier de la canción 10}
+  \label{fig:10a}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/subbass.png}
+    \captionof{figure}{Sub bass de canción 10}
+    \label{fig:10b}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/bass.png}
+    \captionof{figure}{Bass de canción 10}
+    \label{fig:10c}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/lowmid.png}
+    \captionof{figure}{Lower midrange de canción 10}
+    \label{fig:10d}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/mid.png}
+    \captionof{figure}{Midrange de canción 10}
+    \label{fig:10e}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/upmid.png}
+    \captionof{figure}{Upper midrange de canción 10}
+    \label{fig:10f}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{imgs/Cancion10/presence.png}
+    \captionof{figure}{Presence de canción 10}
+    \label{fig:10g}
+  \end{minipage}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{imgs/Cancion10/brilliance.png}
+  \caption{Brilliance de canción 10}
+  \label{fig:10h}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{imgs/Cancion10/espectrograma.png}
+  \caption{Espectrograma de canción 10}
+  \label{fig:10i}
+\end{figure}
+
+% \textbf{Canción 1}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{fourier_01.pdf}
+%   \caption{Transformada de Fourier de Canción 1}
+%   \label{Transformada de Fourier Canción 1}
+% \end{figure}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{espec_01.pdf}
+%   \caption{Espectrograma de canción 1}
+%   \label{Espectograma-cancion-1}
+% \end{figure}
+% \textit{Clasificación:}
+% Instrumental
+
+% \textit{Justificación:} En el espectograma, observamos que muestra líneas horizontales bien 
+% definidas, a comparación de las notas armónicas en los espectogramas de los ejemplos. 
+% Ésto nos indica que al existir líneas horizontales, se asemeja más al 
+% espectograma de la Figura \ref{fig:e2}, que presenta sonidos armónicos, por lo que éste 
+% espectograma se asemeja más con la música instrumental que al reggaetón. 
+
+% \textbf{Canción 2}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{fourier_02.png}
+%   \caption{Transformada de Fourier de canción 2}
+% \end{figure}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{espec_02.png}
+%   \caption{Espectrograma de canción 2}
+% \end{figure}
+% \textit{Clasificación:}
+% Reggaetón
+
+% \textit{Justificación:}
+% El espectrograma no muestra líneas horizontales bien definidas, como
+% sucedía en las notas armónicas de los espectrogramas de los ejemplos.
+% Asimismo, se observan muchas líneas quebradas y "paralelas" entre sí,
+% que se asemeja a la voz en la figura \ref{fig:e5}. Este espectrograma encaja más
+% con la música del reggaetón que con la instrumental. 
+
+% \textbf{Canción 3}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{fourier_03.png}
+%   \caption{Transformada de Fourier de canción 3}
+% \end{figure}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{espec_03.png}
+%   \caption{Espectrograma de canción 3}
+% \end{figure}
+% \textit{Clasificación:}
+% Instrumental
+
+% \textit{Justificación:}
+% Similar a la canción 1, en el espectrograma de esta canción,
+% se muestra un patrón con varias líneas horizontales, lo cual nos
+% hace pensar que el género de la canción es instrumental.
+% Asimismo, no parece haber líneas similares a las producidas por
+% una voz, lo cual nos confirma que esta canción es instrumental y no reggaetón.
 
 \section{Conclusiones}
 
